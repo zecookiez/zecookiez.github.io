@@ -1,63 +1,64 @@
-@import url('https://fonts.googleapis.com/css?family=Yantramanav:100,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100,300,400&display=swap');
 
 /* Clears all the default margins so I don't need to deal with white borders on the edges
-   Also used to set up the font used for the website, "*" selects every item in the HTML file
-   
-   Also lots of the CSS units I used were "vh" and "vw", which are the height and width proportions of the browser window.
-   This makes the website more responsive to different screen sizes.
+	 Also used to set up the font used for the website, "*" selects every item in the HTML file
+	 
+	 Also lots of the CSS units I used were "vh" and "vw", which are the height and width proportions of the browser window.
+	 This makes the website more responsive to different screen sizes.
 */
 
 * {
-  font-family: 'Yantramanav', sans-serif;
-  margin:0;
+	font-family: 'Yantramanav', sans-serif;
+	margin:0;
 }
 
 /* Modify how text is highlighted */
 ::selection {
-  background: #E0AF3C;
-  color: white;
+	background: #E0AF3C;
+	color: white;
 }
 
 ::-moz-selection {
-  background: #E0AF3C;
-  color: white;
+	background: #E0AF3C;
+	color: white;
 }
 
 /* --- Basic HTML tags --- */
 p,ul,a {
-  display:block;
+	display:block;
 }
 
 p {
-  font-size:1.1em;
-  line-height:2em;
+	font-size:1.1em;
+	line-height:2em;
+	font-weight: 300;
 }
 
 h1,h2,h3,h4,h5,h6 {
-  display:block;
-  font-weight:300;
+	display:block;
+	font-weight:300;
 }
 
 h1 {
-  font-size:3em;
+	font-size:3em;
 }
 
 h2 {
-  font-size:2em;
+	font-size:2em;
 }
 
 h3 {
-  font-size:1.5em;
+	font-size:1.5em;
 }
 
 strong {
-  color: #E0AF3C;
-  font-weight: 400;
+	color: #E0AF3C;
+	font-weight: 400;
 }
 
 b {
-  color: #70C1B3;
-  font-weight: 400;
+	color: #70C1B3;
+	font-weight: 400;
 }
 
 /* --- Main header CSS --- */
@@ -65,201 +66,246 @@ b {
 /* Parallax effect, uses a second window inside with perspective to add a scrolling effect */
 
 .main_container {
-  height:100vh;
-  overflow-x:hidden; /* Don't let it move side-to-side */
-  overflow-y:scroll; /* Let the second scrolling bar (hidden) to scroll with the content. This helps create the parallax effect */
-  perspective:1px; 
-  transform-style:preserve-3d;
+	height:100vh;
+	overflow-x:hidden; /* Don't let it move side-to-side */
+	overflow-y:scroll; /* Let the second scrolling bar (hidden) to scroll with the content. This helps create the parallax effect */
+	perspective:1px; 
+	transform-style:preserve-3d;
 }
 
 .parallax_container {
-  
-  will-change: auto; /* Optimising the graphics for older computers, but will-change is pretty new so maybe the computers are too old to support it :s */
-  
-  align-items:center;
-  display:flex;
-  flex:1 0 auto;
-  height:100vh;
-  justify-content:center;
-  position:relative;
-  top:0;
-  transform:translateZ(-1px) scale(2.1); 
-  z-index:-1;
+	
+	will-change: auto; /* Optimising the graphics for older computers, but will-change is pretty new so maybe the computers are too old to support it :s */
+	
+	align-items:center;
+	display:flex;
+	flex:1 0 auto;
+	height:100vh;
+	justify-content:center;
+	position:relative;
+	top:0;
+	transform:translateZ(-1px) scale(2.1); 
+	z-index:-1;
 }
 
 .fixed_container { /* This container is to contain the rest of the content, these won't get affected by the parallax effect */
-  background-color:#FFF;
-  display:block;
-  position:relative;
-  z-index:1;
+	background-color:#FFF;
+	display:block;
+	position:relative;
+	z-index:1;
 }
 
 /* Front part of the header (The mountains) */
 
 .landing {
-  background:url('../img/landing.JPG') no-repeat center center;
-  height:100vh;
-  top:0;
-  width:100%;
-  z-index:1;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
+	background:url('../img/landing.JPG') no-repeat center center;
+	height:100vh;
+	top:0;
+	width:100%;
+	z-index:1;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
 }
 
 /* How message on header is displayed */
 
 .greeting {
-  color:#FFF;
-  height:100vh;
-  position:absolute;
-  top: 50vh;
-  left: 10%;
+	color:#FFF;
+	height:100vh;
+	position:absolute;
+	top: 50vh;
+	left: 10%;
 }
 
 /* --- Navigation Bar --- */
 
 .nav_list {
-  background-color:#FFF;
-  display:inline-block;
-  height:5em;
-  list-style:none;
-  padding:0;
-  position:sticky;
-  text-align:center;
-  top:0;
-  width:100%;
-  z-index:9;
-  box-shadow: 0px 1px 3px grey;
+	background-color:#FFF;
+	display:inline-block;
+	height:5em;
+	list-style:none;
+	padding:0;
+	position:sticky;
+	text-align:center;
+	top:0;
+	width:100%;
+	z-index:9;
+	box-shadow: 0px 1px 3px grey;
 }
 
 .nav_list li {
-  align-items:center;
-  display:inline-flex;
-  justify-content:center;
-  width:15%;
+	align-items:center;
+	display:inline-flex;
+	justify-content:center;
+	width:15%;
 }
 
 .nav_list li a {
-  align-items:center;
-  color:#404040;
-  height:5em;
-  padding: 2em 0;
-  text-decoration:none;
-  transition:all 0.2s ease; /* Hover effect */
+	align-items:center;
+	color:#404040;
+	height:5em;
+	padding: 2em 0;
+	text-decoration:none;
+	transition:all 0.2s ease; /* Hover effect */
 }
 
 .nav_list li a:hover {
-  color:#70C1B3;
+	color:#70C1B3;
 }
 
 /* --- Main Content --- */
 
 .prof_pic {
-  height: 20em;
-  width: 20em;
-  border-radius:50%;  
-  vertical-align: middle;
+	height: 20em;
+	width: 20em;
+	border-radius:50%;	
+	vertical-align: middle;
+	box-shadow: 0 8px 24px rgba(0,0,0,0.25), 0 6px 6px rgba(0,0,0,0.22);
 }
 
 .prof_bio {
-  vertical-align: middle;
+	vertical-align: middle;
 }
 
 #projects > td > p, #projects > td > h2, #contact > td > p, #contact > td > h2 {
-  text-align: center;
+	text-align: center;
 }
 
 .content {
-  width: 100%;
+	width: 100%;
 }
 
 .content_divisors {
-  width: 98%;
-  border-collapse: collapse; /* Unites the borders into one line */
+	width: 98%;
+	border-collapse: collapse; /* Unites the borders into one line */
 }
 
 .content_divisors > tbody > tr > td {
-  padding: 10vh 0;
-  height: 30vh;
-  width: 50%;
+	padding: 10vh 0;
+	height: 30vh;
+	width: 50%;
 }
 
 .content_divisors > tbody > tr{
-  background-color: #FFFFFF;
+	background-color: #FFFFFF;
+}
+
+/* nth-child(2n) selects all the even-numbered positions of table rows (2, 4, 6, 8...) */
+
+.content_divisors > tbody > tr:nth-child(2n){
+	background-color: #F2F2F2;
 }
 
 /* Project display */
 
 .projects_display {
-  width: 100%;
-  padding: 2% 20%;
+	width: 100%;
+	padding: 2% 20%;
 }
 
 .projects_display > tbody > tr > td {
-  padding: 1em;
-  width: 30%;
+	padding: 1em;
+	width: 30%;
 }
 
 .project_container {
-  width: 15vmax;
-  height: 21vmax;
-  margin: auto;
-  background-color: white;
-  box-shadow: 0px 1px 3px grey;
-  padding: 2em;
-  position: relative;
+	width: 15vmax;
+	height: 21vmax;
+	margin: auto;
+	background-color: white;
+	box-shadow: 0px 1px 3px grey;
+	padding: 2em;
+	position: relative;
+	transition: 0.25s ease;
 }
 
 .project_container h3{
-  text-align: center;
+	text-align: center;
 }
 
 .project_container p {
-  text-align: justify;
-  font-size: 0.9em;
-  margin: 0 1.5em;
+	text-align: justify;
+	font-size: 0.9em;
+	margin: 0 1em;
 }
 
 .project_container a{
-  color: white;
-  width: calc(100% - 3em);
-  margin: 0;
-  text-align: center;
-  vertical-align: center;
-  text-decoration: none;
-  font-size: 1.2em;
-  padding: 1em 0;
-  background-color: #E0AF3C;
-  position: absolute;
-  bottom: 1.5em;
+	color: #E0AF3C;
+	width: calc(100% - 3em);
+	margin: 0;
+	text-align: center;
+	vertical-align: center;
+	text-decoration: none;
+	font-size: 1.2em;
+	padding: 1em 0;
+	background-color: white;
+	position: absolute;
+	bottom: 1.5em;
+	border-radius: inherit;
+	border: solid 3px #E0AF3C;
+	transition: 0.25s ease;
+}
+
+.project_container a:hover {
+	color: white;
+	background-color: #E0AF3C;
 }
 
 .project_container img {
-  max-width: 100%;
-  max-height: 40%;
-  width: auto;
-  height: auto;
-  display: block;
-  margin: auto;
-  padding: 1em 0;
+	max-width: 100%;
+	max-height: 40%;
+	width: auto;
+	height: auto;
+	display: block;
+	margin: auto;
+	padding: 1em 0;
 }
 
-/* nth-child(even) selects all the even-numbered positions of table rows (2, 4, 6, 8...) */
+.project_container:hover{
+	border-radius: 10px;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
 
-.content_divisors > tbody > tr:nth-child(2n){
-  background-color: #F2F2F2;
+/* --- Contact Section -- */
+
+.logo_pic {
+	width: 3em;
+	height: 3em;
+	display: block;
+	margin: auto;
+}
+
+#contact h2{
+	padding: 2em 0 1em 0;
+	text-align: center;
+}
+
+#contact td {
+	padding: 1em;
+}
+
+#contact a {
+	color: black;
+	font-size: 1.5em;
+	font-weight: 200;
+	text-decoration: underline dotted #b3b3b3;
+	text-align: center;
+}
+
+#contact table{
+	margin-bottom: 2em;
 }
 
 /* --- Footer --- */
 
 footer {
-  background-color:#353534;
-  width:100%;
+	background-color:#353534;
+	width:100%;
 }
 
 footer p {
-  color:#fff;
-  padding:5vh 0;
-  text-align:center;
+	color:#fff;
+	padding:5vh 0;
+	text-align:center;
 }
