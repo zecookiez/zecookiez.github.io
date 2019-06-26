@@ -1,148 +1,146 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<!-- Make page more friendly to different window sizes -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="author" content="Zeyu Chen">
-		<title>Zeyu Chen</title>
-		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-		<link href="styles/index_style.css" rel="stylesheet">
-	</head>
+  <head>
+	<!-- Make page more friendly to different window sizes -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Zeyu Chen">
+	<title>Zeyu Chen</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link href="styles/index_style.css" rel="stylesheet">
+  </head>
+  
+  <body>
+
+	<div class="main_container">
 	
-	<body>
-
-		<div class="main_container">
+	  <div class="landing"></div>
+	  
+	  <!-- Header content -->
+	  <div class="greeting">
+		  <h2 style="font-size: calc(0.5em + 2vw); font-weight: 200;">Hi, this is</h2>
+		  <h1 style="font-size: calc(4em + 4vw); font-weight: 200;">Zeyu Chen</h1>
+		  <h3 style="font-size: calc(0.5em + 1.5vw); font-weight: 200;">I am an <b>active learner</b> and a <strong>passionate problem solver.</strong></h3>
+	  </div>
+	  
+	  <!-- Main content container, plays a role in the parallax effect -->
+	  <div class="fixed_container">
+	  
+		<!-- Navigation bar -->
+		<ul class="nav_list">
+		  <li><a href="#about">About</a></li>
+		  <li><a href="#projects">Projects</a></li>
+		  <li><a href="#contact">Contact Me</a></li>
+		</ul>
 		
-			<div class="parallax_container">
-			<div class="landing"></div>
-			</div>
-			
-			<!-- Header content -->
-			<div class="greeting">
-				<h2 style="font-size: 2.5em; font-weight: 200;">Hi, this is</h2>
-				<h1 style="font-size: 10em; font-weight: 200;">Zeyu Chen</h1>
-				<h3 style="font-size: 2em; font-weight: 200;">I am an <b>active learner</b> and a <strong>passionate problem solver.</strong></h3>
-			</div>
-			
-			<!-- Main content container, plays a role in the parallax effect -->
-			<div class="fixed_container">
-			
-			<!-- Navigation bar -->
-			<ul class="nav_list">
-				<li><a href="#about">About</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#contact">Contact Me</a></li>
-			</ul>
-			
-			<!-- Main Content -->
-			<div class="content">
-				<table class="content_divisors">
+		<!-- Main Content -->
+		<div class="content">
+		  <table class="content_divisors">
 
-				<!-- About section -->
-				<tr id="about">
-					<td valign="middle" style="padding: 0 0 2vmax 25vmax;"><img class="prof_pic" src="img/profile.JPG"></td>
-					<td style="padding: 10vmax 10vmax 10vmax 2vmax;">
-						<h2 class="prof_bio" style="color: #70C1B3;">Hi, I'm Zeyu Chen.</h2>
-					<br />
-					<p>
-						I am a high school student who enjoys playing around with programming. One of my favorite past-times is to solve logic puzzles in <strong>efficient</strong> and <b>creative</b> manners.
-						<br /> <br/>
-						I began learning how to code since I was 14, when I started my first project of a centimeter to meter units conversion tool.
-						What started as a small school project began a <strong>growing passion</strong>, and soon I was using code to solve some everyday problems.
-						<br /> <br/>
-						My fascination to be able to share my experiences with others, as well as the power to make anything <b>drives</b> my motivation to <strong>always keep learning and experimenting</strong>.
-					</p>
-					</td>
-				</tr>
-				
-				<!-- Projects -->
+			<!-- About section -->
+			<tr id="about">
+			  <td valign="middle" style="width: 40vw;"><img class="prof_pic" src="img/profile.JPG"></td>
+			  <td style="width: 60vw; padding: 0 15% 0 5%;">
+			  	<h2 class="prof_bio" style="color: #70C1B3;">Hi, I'm Zeyu Chen.</h2>
+				<br />
+				<p>
+					I am a high school student who enjoys playing around with programming. One of my favorite past-times is to solve logic puzzles in <strong>efficient</strong> and <b>creative</b> manners.
+					<br /> <br/>
+					I began learning how to code since I was 14, when I started my first project of a centimeter to meter units conversion tool.
+					What started as a small school project began a <strong>growing passion</strong>, and soon I was using code to solve some everyday problems.
+					<br /> <br/>
+					My fascination to be able to share my experiences with others, as well as the power to make anything <b>drives</b> my motivation to <strong>always keep learning and experimenting</strong>.
+				</p>
+			  </td>
+			</tr>
+			
+			<!-- Projects -->
 
-				<tr id = "projects">
-					<td colspan="2">
-					<h2>Projects</h2>
-					<p>Here are some of my best creations and projects done in collaboration with others or in my spare time.</p>
-					<table class="projects_display">
-						<tr>
-							<td colspan = "4">
-								<div class="project_container">
-									<h3>Molecroscope</h3>
-									<img src="img/molecroscope.jpg">
-									<p>A winner of cuHacking 2019, this software analyzes pictures of your skin moles in detail using OpenCV.</p>
-									<a href="https://devpost.com/software/molecroscope" target="_blank">View on Devpost</a>
-								</div>
-							</td>
-							<td colspan = "4">
-								<div class="project_container">
-									<h3>Glow</h3>
-									<img src="img/glow.png">
-									<p>A neon-themed game built in Javascript and analyzes music to sync with numerous powerups, enemies, and obstacles.</p>
-									<a href="https://github.com/cycnus-studio/cycnus-studio.github.io" target="_blank">View on Github</a>
-								</div>
-							</td>
-							<td colspan = "4">
-								<div class="project_container">
-									<h3>Scrabble</h3>
-									<img src="img/scrabble.png">
-									<p>A Scrabble game made in Javascript where the user plays against a computer with varying difficulties.</p>
-									<a href="https://github.com/zecookiez/scrabble" target="_blank">View on Github</a>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td colspan = "6" align="right">
-								<div class="project_container" style="margin: 0;">
-									<h3>Sunspot Bot</h3>
-									<img src="img/sunspotbot.jpg">
-									<p>A robot that listens to user gestures through Leapmotion to make your plant mobile and well-nourished.</p>
-									<a href="https://devpost.com/software/sunspot-bot" target="_blank">View on Devpost</a>
-								</div>
-							</td>
-							<td colspan = "6" align="left">
-								<div class="project_container" style="margin: 0;">
-									<h3>Competitive Programming</h3>
-									<img src="img/competitive.png">
-									<p>I've been solving programming problems in contests for the past year such as Advent Of Code, a yearly christmas-themed contest.</p>
-									<a href="https://github.com/zecookiez/AdventOfCode2018" target="_blank">View on Github</a>
-								</div>
-							</td>
-						</tr>
-					</table>
-					</td>
-				</tr>
-				
-				<!-- Contact -->
-				<tr id = "contact">
-					<td colspan="2" align="center">
-					<h2>Contact Me</h2><br />
-					<h3><b>Zeyu Chen</b></h3>
-					<table>
-						<tr>
-							<td colspan="2"><a href="mailto: ZeyuChenCA@gmail.com" target="_blank"><b>[</b> ZeyuChenCA@gmail.com <b>]</b></a></td>
-						</tr>
-						<tr>
-							<td><img src="img/github.png" class="logo_pic"></td>
-							<td><a href="https://github.com/zecookiez" target="_blank"><b>[</b> zecookiez <b>]</b></a></td>
-						</tr>
-						<tr>
-							<td><img src="img/linkedin.png" class="logo_pic"></td>
-							<td><a href="https://www.linkedin.com/in/zeyuchen-dev/" target="_blank"><b>[</b> Zeyu Chen <b>]</b></a></td>
-						</tr>
-						<tr>
-							<td><img src="img/devpost.png" class="logo_pic"></td>
-							<td><a href="https://devpost.com/zecookiez" target="_blank"><b>[</b> Zeyu Chen (zecookiez) <b>]</b></a></td>
-						</tr>
-					</table>
-					</td>
-				</tr>
+			<tr id = "projects">
+			  <td colspan="2">
+				<h2 style="margin: 12vh 0 2vh 0;">Projects</h2>
+				<p>Here are some of my best creations and projects done in collaboration with others or in my spare time.</p>
+				<table class="projects_display">
+					<tr>
+						<td colspan = "4">
+							<div class="project_container">
+								<h3>Molecroscope</h3>
+								<img src="img/molecroscope.jpg">
+								<p>A winner of cuHacking 2019, this software analyzes pictures of your skin moles in detail using OpenCV.</p>
+								<a href="https://devpost.com/software/molecroscope" target="_blank">View on Devpost</a>
+							</div>
+						</td>
+						<td colspan = "4">
+							<div class="project_container">
+								<h3>Glow</h3>
+								<img src="img/glow.png">
+								<p>A neon-themed game which analyzes music to sync with numerous powerups, enemies, and obstacles.</p>
+								<a href="https://github.com/cycnus-studio/cycnus-studio.github.io" target="_blank">View on Github</a>
+							</div>
+						</td>
+						<td colspan = "4">
+							<div class="project_container">
+								<h3>Scrabble</h3>
+								<img src="img/scrabble.png">
+								<p>A Scrabble game made in Javascript where the user plays against a computer with varying difficulties.</p>
+								<a href="https://github.com/zecookiez/scrabble" target="_blank">View on Github</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td colspan = "6" align="right">
+							<div class="project_container" style="margin: 0;">
+								<h3>Sunspot Bot</h3>
+								<img src="img/sunspotbot.jpg">
+								<p>A robot that listens to user gestures through Leapmotion to make your plant mobile and well-nourished.</p>
+								<a href="https://devpost.com/software/sunspot-bot" target="_blank">View on Devpost</a>
+							</div>
+						</td>
+						<td colspan = "6" align="left">
+							<div class="project_container" style="margin: 0;">
+								<h3>Competitive Programming</h3>
+								<img src="img/competitive.png">
+								<p>I've been solving programming problems in contests such as Advent Of Code, a yearly christmas-themed contest.</p>
+								<a href="https://github.com/zecookiez/AdventOfCode2018" target="_blank">View on Github</a>
+							</div>
+						</td>
+					</tr>
 				</table>
-			</div>
+			  </td>
+			</tr>
 			
-			<!-- Footer -->
-			<footer>
-				<p>ZEYU's Personal Site © 2019<br><b>made with ♥ by ZEYU CHEN</b></p>
-			</footer>
-			</div>
+			<!-- Contact -->
+			<tr id = "contact">
+			  <td colspan="2" align="center">
+				<h2>Contact Me</h2><br />
+				<h3><b>Zeyu Chen</b></h3>
+				<table>
+					<tr>
+						<td colspan="2"><a href="mailto: ZeyuChenCA@gmail.com" target="_blank"><b>[</b> ZeyuChenCA@gmail.com <b>]</b></a></td>
+					</tr>
+					<tr>
+						<td><img src="img/github.png" class="logo_pic"></td>
+						<td><a href="https://github.com/zecookiez" target="_blank"><b>[</b> zecookiez <b>]</b></a></td>
+					</tr>
+					<tr>
+						<td><img src="img/linkedin.png" class="logo_pic"></td>
+						<td><a href="https://www.linkedin.com/in/zeyuchen-dev/" target="_blank"><b>[</b> Zeyu Chen <b>]</b></a></td>
+					</tr>
+					<tr>
+						<td><img src="img/devpost.png" class="logo_pic"></td>
+						<td><a href="https://devpost.com/zecookiez" target="_blank"><b>[</b> Zeyu Chen (zecookiez) <b>]</b></a></td>
+					</tr>
+				</table>
+			  </td>
+			</tr>
+		  </table>
 		</div>
-	</body>
+		
+		<!-- Footer -->
+		<footer>
+		  <p>ZEYU's Personal Site © 2019<br><b>made with ♥ by ZEYU CHEN</b></p>
+		</footer>
+	  </div>
+	</div>
+  </body>
 </html>
