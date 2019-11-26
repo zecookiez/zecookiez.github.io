@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Yantramanav:100,300,400&display=swap');
 
 /* Clears all the default margins so I don't need to deal with white borders on the edges
-   Also used to set up the font used for the website, "*" selects every item in the HTML file
+   Also used to set up the font used for the website, "*" selects every item in the HTML file.
    
    Also lots of the CSS units I used were "vh" and "vw", which are the height and width proportions of the browser window.
    This makes the website more responsive to different screen sizes.
