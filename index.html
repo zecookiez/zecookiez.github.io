@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
+	<head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-161508207-1"></script>
 	<script async src="https://www.google-analytics.com/analytics.js"></script>
@@ -11,15 +11,15 @@
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 		ga('provide', 'adblockTracker', function(tracker, opts) {
-		  var ad = document.createElement('ins');
-		  ad.className = 'AdSense';
-		  ad.style.display = 'block';
-		  ad.style.position = 'absolute';
-		  ad.style.top = '-1px';
-		  ad.style.height = '1px';
-		  document.body.appendChild(ad);
-		  tracker.set('dimension' + opts.dimensionIndex, !ad.clientHeight);
-		  document.body.removeChild(ad);
+			var ad = document.createElement('ins');
+			ad.className = 'AdSense';
+			ad.style.display = 'block';
+			ad.style.position = 'absolute';
+			ad.style.top = '-1px';
+			ad.style.height = '1px';
+			document.body.appendChild(ad);
+			tracker.set('dimension' + opts.dimensionIndex, !ad.clientHeight);
+			document.body.removeChild(ad);
 		});
 		ga('create', 'UA-161508207-1', 'auto');
 		ga('require', 'adblockTracker', {dimensionIndex: 1});
@@ -31,60 +31,67 @@
 	<title>Zeyu Chen</title>
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	<link href="styles/index_style.css" rel="stylesheet">
-  </head>
-  
-  <body>
+	</head>
+	
+	<body>
 
 	<div class="main_container">
 	
-	  <div class="landing"></div>
-	  
-	  <!-- Header content -->
-	  <div class="greeting">
-		  <h2 style="font-size: calc(0.5em + 2vw); font-weight: 200;">Hi, this is</h2>
-		  <h1 style="font-size: calc(4em + 4vw); font-weight: 200;">Zeyu Chen</h1>
-		  <h3 style="font-size: calc(0.5em + 1.5vw); font-weight: 200;">I am an <b>active learner</b> and a <strong>passionate problem solver.</strong></h3>
-	  </div>
-	  
-	  <!-- Main content container, plays a role in the parallax effect -->
-	  <div class="fixed_container">
-	  
+		<div class="landing">
+			<div id="pic-container">
+				<img src="img/corner.png" id="corner0">
+				<img src="img/corner.png" id="corner1">
+				<img src="img/corner1.png" id="corner2">
+				<img src="img/downArrow.png" id="arrow">
+			</div>
+		</div>
+		
+		<!-- Header content -->
+		<div class="greeting">
+			<h2 style="font-size: calc(0.5em + 2vw); font-weight: 200;">Hi, this is</h2>
+			<h1 style="font-size: calc(4em + 4vw); font-weight: 200;">Zeyu Chen</h1>
+			<h3 style="font-size: calc(0.5em + 1.5vw); font-weight: 200;">I am an <b>active learner</b> and a <strong>passionate problem solver.</strong></h3>
+		</div>
+		
+		<!-- Main content container, plays a role in the parallax effect -->
+		<div class="fixed_container">
+		
 		<!-- Navigation bar -->
 		<ul class="nav_list">
-		  <li><a href="#about">About</a></li>
-		  <li><a href="#projects">Projects</a></li>
-		  <li><a href="#contact">Contact Me</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#projects">Projects</a></li>
+			<li><a href="#contact">Contact Me</a></li>
 		</ul>
 		
 		<!-- Main Content -->
 		<div class="content">
-		  <table class="content_divisors">
+			<table class="content_divisors">
 
 			<!-- About section -->
 			<tr id="about">
-			  <td valign="middle" style="width: 40vw;" class="prof_pic_back"><img class="prof_pic" src="img/profile.JPG"></td>
-			  <td style="width: 60vw; padding: 0 15% 0 5%;">
-			  	<h2 class="prof_bio" style="color: #70C1B3;">Hi, I'm Zeyu Chen.</h2>
+				<td valign="middle" style="width: 40vw;" class="prof_pic_back"><img class="prof_pic" src="img/profile.JPG"></td>
+				<td style="width: 60vw; padding: 0 15% 0 5%;">
+					<h2 class="prof_bio" style="color: #70C1B3;">Hi, I'm Zeyu Chen.</h2>
 				<br />
 				<p>
-					I am a high school student who enjoys playing around with programming. One of my favorite past-times is to solve logic puzzles in <strong>efficient</strong> and <b>creative</b> manners.
+					I am a high school student who enjoys working in computer and data science. One of my favorite past-times is to solve programming problems in <strong>efficient</strong> and <b>creative</b> manners.
 					<br /> <br />
 					I began learning how to code since I was 14, when I started my first project of a centimeter to meter units conversion tool.
-					What started as a small school project began a <strong>growing passion</strong>, and soon I was using code to solve some everyday problems.
+					What started as a small school project began a <b>passion</b>, and soon I was using code to solve some everyday problems.
 					<br /> <br />
-					Outside of programming I enjoy practicing Taekwon-do as a 3rd Dan Black Belt, cooking, and even taking morning jogs.
+					Outside of programming I enjoy practicing Taekwon-do as a 3rd Dan Black Belt, researching algorithms, doing graphic design, and writing computer science problems for online competitions.
 					<br /> <br />
-					My fascination to be able to share my experiences with others, as well as the power to make anything <b>drives</b> my motivation to <strong>always keep learning and experimenting</strong>.
+					The sheer versatility of programming and countless algorithms <b>drives</b> my motivation to <strong>always keep learning and experimenting</strong>.
 				</p>
-			  </td>
+				</td>
 			</tr>
 			
 			<!-- Projects -->
 
 			<tr id = "projects">
-			  <td colspan="2">
+				<td colspan="2">
 				<h2 style="margin: 12vh 0 2vh 0;">Projects</h2>
-				<p>Here are some of my best creations and projects done in collaboration with others or in my spare time.</p>
+				<p>Here are some of my favourite projects done in collaboration with others or in my spare time.</p>
 				<table class="projects_display">
 					<tr>
 						<td colspan = "4">
@@ -131,12 +138,12 @@
 						</td>
 					</tr>
 				</table>
-			  </td>
+				</td>
 			</tr>
 			
 			<!-- Contact -->
 			<tr id = "contact">
-			  <td colspan="2" align="center">
+				<td colspan="2" align="center">
 				<div class="circle">
 					<h2>Contact Me</h2><br />
 					<h3><b>Zeyu Chen</b></h3>
@@ -158,16 +165,20 @@
 						</tr>
 					</table>
 				</div>
-			  </td>
+				</td>
 			</tr>
-		  </table>
+			</table>
 		</div>
 		
 		<!-- Footer -->
 		<footer>
-		  <p>ZEYU's Personal Site © 2019<br><b>made with ♥ by ZEYU CHEN</b></p>
+			<p>ZEYU's Personal Site © 2019<br><b>made with ♥ by ZEYU CHEN</b></p>
 		</footer>
-	  </div>
+		</div>
 	</div>
-  </body>
+	
+	<!-- Load animation scripts -->
+	<script src="js/animation.js"></script>
+	
+	</body>
 </html>
