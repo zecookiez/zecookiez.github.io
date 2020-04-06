@@ -85,7 +85,7 @@ b {
   -moz-background-size: cover;
   background-size: cover;
   background-attachment: fixed;
-  background-position: 0 -50px;
+  background-position: 0 0;
   overflow: hidden;
 }
 
@@ -136,9 +136,9 @@ b {
 }
 
 #arrow {
-  width: 8vmin;
-  top: calc(95vh - 8vmin);
-  left: calc(50vw - 4vmin);
+  width: 14vmin;
+  top: calc(95vh - 14vmin);
+  left: 10vw;
   /* todo: get some sort of neat animation */;
 }
 
@@ -333,13 +333,36 @@ b {
   display: table-cell;
   vertical-align: middle;
   height: 75vmin;
-  width: 75vmin;
+  width: 70vw;
   overflow: auto;
   margin: auto;
   z-index: 1;
-  border-radius: 50%;
+  border-radius: 1em;
   background-color: white;
   box-shadow: 0 8px 24px rgba(0,0,0,0.25), 0 6px 6px rgba(0,0,0,0.22);
+}
+
+.left-section{
+  color: white;
+  display: table-cell;
+  vertical-align: middle;
+  height: 75vmin;
+  width: 35vw;
+  overflow: auto;
+  margin: auto;
+  z-index: 1;
+  background-color: #80BF98;
+}
+
+.right-section{
+  display: table-cell;
+  vertical-align: middle;
+  height: 75vmin;
+  width: 35vw;
+  overflow: auto;
+  margin: auto;
+  z-index: 1;
+  background-color: #F9F8CF;
 }
 
 .logo_pic {

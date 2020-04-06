@@ -19,12 +19,12 @@ eventListener.addEventListener("mousemove", (e) => {
 	img3.style.top = `calc(90vh - 10em + ${e.clientY / 200}px)`;
 	img3.style.left = `calc(90vw - 10em + ${e.clientX / 200}px)`;
 
-	arrow.style.top = `calc(95vh - 8vmin + ${e.clientY / 200}px)`;
-	arrow.style.left = `calc(50vw - 4vmin + ${e.clientX / 200}px)`;
+	arrow.style.top = `calc(95vh - 14vmin + ${e.clientY / 200}px)`;
+	arrow.style.left = `calc(10vw + ${e.clientX / 200}px)`;
 
 	header.style.top = `calc(50vh + ${e.clientY / 200}px)`;
 	header.style.left = `calc(10% + ${e.clientX / 200}px)`;
 	
 	bck.style.backgroundPositionX = `${-e.clientX / 300}px`;
-	bck.style.backgroundPositionY = `${-50 - e.clientY / 300}px`;
+	bck.style.backgroundPositionY = `${-150 -e.clientY / 300}px`;
 });
