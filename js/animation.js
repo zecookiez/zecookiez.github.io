@@ -7,7 +7,7 @@ let bck = document.querySelector(".landing");
 
 const eventListener = document.getElementById("pic-container");
 
-console.log(bck.style.backgroundPositionY);
+/*console.log(bck.style.backgroundPositionY);
 
 eventListener.addEventListener("mousemove", (e) => {
 	img1.style.top = `calc(10vh + ${e.clientY / 200}px)`;
@@ -24,7 +24,4 @@ eventListener.addEventListener("mousemove", (e) => {
 
 	header.style.top = `calc(50vh + ${e.clientY / 200}px)`;
 	header.style.left = `calc(10% + ${e.clientX / 200}px)`;
-	
-	bck.style.backgroundPositionX = `${-e.clientX / 300}px`;
-	bck.style.backgroundPositionY = `${-150 -e.clientY / 300}px`;
-});
+});*/
