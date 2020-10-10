@@ -77,7 +77,7 @@ b {
 /* Front part of the header */
 
 .landing {
-  background: white;
+  background: url('../img/background.jpg') center center;
   height: 100vh;
   top: 0;
   z-index: 1;
@@ -188,7 +188,7 @@ b {
 /* How message on header is displayed */
 
 .greeting {
-  color:#000;
+  color:#343a40;
   height: 100vh;
   position:absolute;
   top: 50vh;
