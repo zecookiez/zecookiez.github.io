@@ -1,4 +1,6 @@
-A repo to hold my personal website built from scratch using HTML and CSS.
+A repo to hold my personal website built from scratch using HTML, CSS, and Javascript.
+
+### View the final product at zeyuchen.com
 
 ### Author
 
