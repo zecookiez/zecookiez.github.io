@@ -148,8 +148,8 @@ b {
 }
 
 #card {
-  top: calc(40vh - 10em);
-  left: calc(65vw - 10em);
+  top: calc(23vh);
+  left: calc(55vw);
   width: 30vw;
   height: 60vh;
   object-fit: cover;
@@ -160,8 +160,8 @@ b {
 }
 
 #back-card {
-  top: calc(40vh - 10em);
-  left: calc(65vw - 10em);
+  top: calc(23vh);
+  left: calc(55vw);
   width: 30vw;
   height: 60vh;
   position: absolute;
@@ -197,7 +197,7 @@ b {
   height: 100vh;
   position:absolute;
   top: 50vh;
-  left: 10%;
+  left: 10vw;
 }
 
 /* --- Navigation Bar --- */
