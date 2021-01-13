@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Yantramanav:100,300,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 /* Clears all the default margins so I don't need to deal with white borders on the edges
    Also used to set up the font used for the website, "*" selects every item in the HTML file.
@@ -77,7 +78,7 @@ b {
 /* Front part of the header */
 
 .landing {
-  background: url('../img/landing.png') center center, #F5F3F4;
+  background: url('../img/faded-landing.png') center center, #F5F3F4;
   image-rendering: crisp-edges;
   image-rendering: -moz-crisp-edges;          /* Firefox */
   image-rendering: -o-crisp-edges;            /* Opera */
@@ -148,8 +149,8 @@ b {
 }
 
 #card {
-  top: calc(40vh - 10em);
-  left: calc(65vw - 10em);
+  top: calc(18vh);
+  left: calc(55vw);
   width: 30vw;
   height: 60vh;
   object-fit: cover;
@@ -160,8 +161,8 @@ b {
 }
 
 #back-card {
-  top: calc(40vh - 10em);
-  left: calc(65vw - 10em);
+  top: calc(18vh);
+  left: calc(55vw);
   width: 30vw;
   height: 60vh;
   position: absolute;
@@ -203,33 +204,29 @@ b {
 /* --- Navigation Bar --- */
 
 .nav_list {
-  background-color: #6c757d;
   display: inline-block;
   height: calc(5vh + 2em);
   list-style: none;
   padding: 0;
-  position: sticky;
+  position: absolute;
   text-align: center;
-  top: 0;
-  width: 100%;
+  top: 2vh;
+  width: 50%;
   z-index: 9;
-  box-shadow: 0px 1px 3px grey;
 }
 
 .nav_list li {
-  align-items: center;
   display: inline-flex;
   justify-content: center;
   width: 15%;
 }
 
 .nav_list li a {
-  align-items:center;
-  color:#f8f9fa;
-  font-weight: 200;
-  height: calc(3vh + 5em);
+  color:#363636;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
   padding: calc(1.3vh + 0.8em) 0;
-  font-size: calc(0.8em + 0.8vh);
+  font-size: calc(0.2em + 0.8vw);
   text-decoration: none;
   transition: all 0.2s ease; /* Hover effect */
 }
