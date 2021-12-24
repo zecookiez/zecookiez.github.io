@@ -382,43 +382,16 @@ b {
 /* --- Contact Section -- */
 
 #contact {
-  height: 90vmin;
+  height: 20vmin;
 }
 
 .circle{
   display: table-cell;
   vertical-align: middle;
-  height: 75vmin;
   width: 70vw;
   overflow: auto;
   margin: auto;
   z-index: 1;
-  border-radius: 1em;
-  background-color: white;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.25), 0 6px 6px rgba(0,0,0,0.22);
-}
-
-.left-section{
-  color: white;
-  display: table-cell;
-  vertical-align: middle;
-  height: 75vmin;
-  width: 35vw;
-  overflow: auto;
-  margin: auto;
-  z-index: 1;
-  background-color: #80BF98;
-}
-
-.right-section{
-  display: table-cell;
-  vertical-align: middle;
-  height: 75vmin;
-  width: 35vw;
-  overflow: auto;
-  margin: auto;
-  z-index: 1;
-  background-color: #F9F8CF;
 }
 
 .logo_pic {
@@ -431,6 +404,8 @@ b {
   image-rendering: -o-crisp-edges;            /* Opera */
   image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming)*/
   -ms-interpolation-mode: nearest-neighbor;   /* IE (non-standard property) */
+  -webkit-filter: invert(1);
+   filter: invert(1);
 }
 
 #contact h2{
@@ -439,7 +414,7 @@ b {
 }
 
 #contact > td {
-  background-color: #FFE07C;
+  background-color: #0D0C0C;
 }
 
 #contact td {
@@ -447,7 +422,7 @@ b {
 }
 
 #contact a {
-  color: black;
+  color: #e8e8e8;
   font-size: calc(1vw + 0.4em);
   font-weight: 200;
   text-decoration: underline dotted #b3b3b3;
@@ -463,7 +438,7 @@ b {
 }
 
 #contact table{
-  margin-bottom: 2em;
+  /*margin-bottom: 2em;*/
 }
 
 /* --- Footer --- */
