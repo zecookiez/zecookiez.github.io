@@ -301,13 +301,14 @@ b {
   position:absolute;
   top: 50vh;
   left: 10%;
+  width: 0;
 }
 
 @media (max-width: 580px) {
 	.greeting h1 {
-		background:red;
 		max-width: 50%;
 		width: max-content;
+		padding: 0 !important;
 	}
 }
 
