@@ -441,13 +441,13 @@ class Board {
         var sound;
         // Play correct sound based on movement type performed
         if (moveInfo.enemyMated || moveInfo.isStalemate)
-            sound = new Audio("../sfx/game-end.wav");
+            sound = new Audio("./sfx/game-end.wav");
         else if (moveInfo.enemyChecked)
-            sound = new Audio("../sfx/move-check.wav");
+            sound = new Audio("./sfx/move-check.wav");
         else if (moveInfo.capturedPiece)
-            sound = new Audio("../sfx/capture.wav");
+            sound = new Audio("./sfx/capture.wav");
         // normal move sound effect
-        else sound = new Audio("../sfx/move-self.wav");
+        else sound = new Audio("./sfx/move-self.wav");
 
         sound.play();
     }
