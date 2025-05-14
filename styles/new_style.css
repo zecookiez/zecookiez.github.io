@@ -1,0 +1,251 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  background-color: #ffffff;
+  color: #222;
+  line-height: 1.6;
+  padding: 0 0rem;
+  overflow-x: hidden;
+}
+
+#parallax-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  overflow: visible;
+}
+
+#svg-background {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: visible;
+}
+
+header {
+  max-width: 800px;
+  margin: 2rem auto 1rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  z-index: 1;
+  padding: 0 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+  font-family: "Outfit", serif;
+  font-weight: 600;
+}
+
+.greeting {
+  font-size: 1.5rem;
+  font-family: "Outfit", serif;
+  font-weight: 400;
+}
+
+.👋 {
+  display: inline-block;
+  transform: translateX(-2.4rem);
+  position: absolute;
+}
+
+.hidden-👋 {
+  display: none;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.intro {
+  margin-bottom: 2rem;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.intro ul {
+  margin-top: 0.5rem;
+}
+
+.contact {
+  margin-bottom: 0.5rem;
+}
+
+.contact a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #555;
+  padding: 0.5rem 0;
+  display: inline-block;
+}
+
+#project-section {
+  padding: 2rem 0;
+  background-color: rgb(252, 251, 248);
+}
+
+.projects {
+  max-width: 800px;
+  margin: 2rem auto;
+  position: relative;
+  z-index: 1;
+  padding: 0 1rem;
+}
+
+.project {
+  margin-bottom: 3rem;
+  padding-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.projects > div:first-of-type {
+  border-top: 1px dashed rgb(45, 45, 45);
+}
+
+.project img {
+  width: 240px;
+  height: 135px;
+  border-radius: 8px;
+  filter: drop-shadow(3px 3px 3px #dfdfdf);
+  margin-right: 1rem;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.project-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.project-description {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.project-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.tech-labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  justify-content: flex-end;
+}
+
+.tech-labels span {
+  background-color: #eee;
+  color: #333;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+}
+
+a.project-link {
+  text-decoration: underline;
+  color: #333;
+  font-size: 0.95rem;
+  display: inline-block;
+  margin: 0.5rem 0;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 620px) {
+  header {
+    padding: 0 1rem;
+  }
+
+  .project {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .project img {
+    order: 2;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+  }
+
+  .project .project-header {
+    order: 1;
+  }
+
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .intro {
+    font-size: 0.95rem;
+  }
+
+  .project .project-description {
+    order: 3;
+  }
+
+  .project .tech-labels {
+    order: 4;
+    justify-content: flex-start;
+  }
+
+  .project-link {
+    order: 5;
+  }
+
+  .project-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact a {
+    margin-bottom: 0.4rem;
+  }
+
+  .👋 {
+    display: none;
+  }
+
+  .hidden-👋 {
+    display: inline-block;
+  }
+}

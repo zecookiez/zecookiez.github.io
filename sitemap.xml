@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://zeyuchen.com/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://zeyuchen.com/chess</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fun.zeyuchen.com/quote</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fun.zeyuchen.com/bias</loc>
+    <priority>0.8</priority>
+  </url>
+</urlset>

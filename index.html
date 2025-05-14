@@ -1,167 +1,277 @@
 <!DOCTYPE html>
-<html>
-
-	<head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zeyu Chen | Software Engineer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/d261036f39.js" crossorigin="anonymous"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161508207-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date()); gtag('config', 'UA-161508207-1');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-161508207-1");
     </script>
-	<script src="https://kit.fontawesome.com/d261036f39.js" crossorigin="anonymous"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" content="Zeyu Chen">
-	<title>Zeyu Chen</title>
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-	<link href="styles/index_style.css" rel="stylesheet">
-	</head>
-	
-	<body>
-	<div class="main_container">
-        <!-- Navigation bar -->
-     	<ul class="nav_list">
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#projects">PROJECTS</a></li>
-        </ul>
-        
-		<div class="landing">
-			<div id="pic-container">
-                <div id="back-border" class="dotted1"></div>
-				<div id="back-border" class="dotted2"></div>
-				<div id="dot-grid"></div>
-				<div id="circle-back"></div>
-				<div id="circle-border"></div>
-				<div id="triangle1"></div>
-				<div id="triangle2"></div>
-				<div id="triangle3"></div>
-				<div id="triangle4"></div>
-				<div id="triangle5"></div>
-				<div id="triangle6"></div>
-				<div id="square1"></div>
-				<div id="square2"></div>
-				<div id="square3"></div>
-				<div id="square4"></div>
-                <img src="img/landing-small-min.jpg" id="card">
-			</div>
-		</div>
-		
-		<!-- Header content -->
-		<div class="greeting">
-			<h2 style="font-size: calc(0.5em + 4vmin); font-weight: 200; width: max-content;">Hi, I'm</h2>
-			<h1 style="font-size: calc(3em + 8vmin); font-weight: 200; background-color: #1d1d1d; padding: 0 0.2em; width: max-content;">Zeyu Chen</h1>
-            <!--<h2 class="prof_bio" style="color: #70C1B3;">Hi, I'm Zeyu Chen.</h2>
-					<br />
-					<p style="color: #b3b3b3;">
-						I am a Software Engineering student at the University of Waterloo. One of my favourite pastimes is to solve programming problems in <strong>efficient</strong> and <b>creative</b> manners.
-						<br /> <br />
-						Outside of programming, I enjoy practicing Taekwon-do as a 3rd Dan Black Belt, speedrunning, researching algorithms, doing art & graphic design, and writing computer science problems for online competitions.
-						<br /> <br />
-						I was recently invited to the <b>Canadian Computing Olympiad</b> in 2021 as a participant, and received a silver medal.
-					</p>
-					<p class="contact-info">
-						<br /> <br />
-						<a href="https://github.com/zecookiez" target="_blank"><i class="fab fa-github"></i></a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="https://www.linkedin.com/in/zeyuchen-dev/" target="_blank"><i class="fab fa-linkedin"></i></a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="mailto: hello@zeyuchen.com"><i class="fas fa-envelope"></i></a>&nbsp;&nbsp;/&nbsp;&nbsp;<span class="discord"><i class="fab fa-discord"></i> Zeyu</span>
-					</p>-->
-		</div>
-		
-		<!-- Main content container, plays a role in the parallax effect -->
-		<div class="fixed_container">
-        
-		<!-- Main Content -->
-		<div class="content">
-			<table class="content_divisors">
+    <link href="styles/new_style.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
-			<!-- About section -->
-			<tr id="about">
-				<td valign="middle" style="width: 40vw;" class="prof_pic_back">
-					<img class="prof_pic" src="img/profile.JPG">
-					<div class="circle1"></div>
-					<div class="circle2"></div>
-				</td>
-				<td style="width: 60vw; padding: 0 15% 0 5%;">
-					<h2 class="prof_bio" style="color: #70C1B3;">Hi, I'm Zeyu Chen.</h2>
-					<br />
-					<p style="color: #b3b3b3;">
-						I am a Software Engineering student at the University of Waterloo. One of my favourite pastimes is to solve programming problems in <strong>efficient</strong> and <b>creative</b> manners.
-						<br /> <br />
-						Outside of programming, I enjoy practicing Taekwon-do as a 3rd Dan Black Belt, speedrunning, researching algorithms, doing art & graphic design, and writing computer science problems for online competitions.
-						<br /> <br />
-						I was recently invited to the <b>Canadian Computing Olympiad</b> in 2021 as a participant, and received a silver medal.
-					</p>
-					<p class="contact-info">
-						<br /> <br />
-						<a href="https://github.com/zecookiez" target="_blank"><i class="fab fa-github"></i></a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="https://www.linkedin.com/in/zeyuchen-dev/" target="_blank"><i class="fab fa-linkedin"></i></a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="mailto: hello@zeyuchen.com"><i class="fas fa-envelope"></i></a>&nbsp;&nbsp;/&nbsp;&nbsp;<span class="discord"><i class="fab fa-discord"></i> Zeyu</span>
-					</p>
-				</td>
-			</tr>
-			
-			<!-- Projects -->
+    <!-- Metadata -->
+    <meta name="description" content="Portfolio of Zeyu Chen, a Software Engineering student at the University of Waterloo. Projects in graphics, ML, systems, and more." />
+    <meta
+      name="keywords"
+      content="Zeyu Chen, Software Engineer, Portfolio, University of Waterloo, Graphics, ML, CUDA, Projects, Raytracer, Open Source, Spark, Databricks, Snowflake, Coinbase, Akuna Capital"
+    />
+    <meta name="author" content="Zeyu Chen" />
+    <meta name="robots" content="index, follow" />
 
-			<tr id = "projects">
-				<td colspan="2">
-				<h2 style="margin: 8vh 0 2vh 0;">Projects</h2>
-				<p>Here are some of my favourite projects done in collaboration with others or in my spare time.</p>
-				<table class="projects_display">
-					<tr>
-						<td align="right">
-							<div class="project_container" style="margin: 0;">
-								<h3>Molecroscope</h3>
-								<img src="img/molecroscope.jpg">
-								<p>A winner of cuHacking 2019, this software analyzes pictures of your skin moles in detail using OpenCV.</p>
-								<a href="https://devpost.com/software/molecroscope" target="_blank">View on Devpost</a>
-							</div>
-						</td>
-						<td align="left">
-							<div class="project_container" style="margin: 0;">
-								<h3>Glow</h3>
-								<img src="img/glow.png">
-								<p>A neon-themed game which analyzes music to sync with numerous powerups, enemies, and obstacles.</p>
-								<a href="https://github.com/cycnus-studio/cycnus-studio.github.io" target="_blank">View on Github</a>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td align="right">
-							<div class="project_container" style="margin: 0;">
-								<h3>Scrabble</h3>
-								<img src="img/scrabble.png">
-								<p>A classic Scrabble game with a builtin computer playing in varying difficulties written in JavaScript.</p>
-								<a href="https://github.com/zecookiez/scrabble" target="_blank">View on Github</a>
-							</div>
-						</td>
-						<td align="left">
-							<div class="project_container" style="margin: 0;">
-								<h3>3D Chess</h3>
-								<img src="img/3dchess.PNG">
-								<p>A web version of 3D Chess, with varying computer difficulties done with WebAssembly and JavaScript.</p>
-								<a href="https://zeyuchen.com/chess" target="_blank">Try it out!</a>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td align="right">
-							<div class="project_container" style="margin: 0;">
-								<h3>Sunspot Bot</h3>
-								<img src="img/sunspotbot.jpg">
-								<p>A robot that listens to user gestures through Leapmotion to make your plant mobile and well-nourished.</p>
-								<a href="https://devpost.com/software/sunspot-bot" target="_blank">View on Devpost</a>
-							</div>
-						</td>
-						<td align="left">
-							<div class="project_container" style="margin: 0;">
-								<h3>Competitive Programming</h3>
-								<img src="img/competitive.png">
-								<p>I've solved and authored various computer science problems on the DMOJ competitive programming platform.</p>
-								<a href="https://dmoj.ca/user/Zeyu/solved" target="_blank">View on DMOJ</a>
-							</div>
-						</td>
-					</tr>
-				</table>
-				</td>
-			</tr>
-			</table>
-		</div>
-		</div>
-	</div>
-	</body>
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Zeyu Chen | Software Engineering Portfolio" />
+    <meta property="og:description" content="Software Engineering student showcasing graphics, ML and systems projects." />
+    <meta property="og:image" content="https://zeyuchen.com/img/new_profile.jpg" />
+    <meta property="og:url" content="https://zeyuchen.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Zeyu Chen Portfolio" />
+    <meta name="twitter:description" content="Software Engineering student showcasing some interesting projects." />
+    <meta name="twitter:image" content="https://zeyuchen.com/img/new_profile.jpg" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://zeyuchen.com" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Zeyu Chen",
+        "url": "https://zeyuchen.com",
+        "image": "https://zeyuchen.com/img/new_profile.jpg",
+        "sameAs": ["https://linkedin.com/in/zeyuchen-dev", "https://github.com/zecookiez"],
+        "jobTitle": "Software Engineer",
+        "description": "Portfolio of Zeyu Chen, Software Engineering student at the University of Waterloo, showcasing some interesting projects in graphics, machine learning, and systems."
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="parallax-container">
+      <svg id="svg-background"></svg>
+    </div>
+
+    <div id="main-content">
+      <header>
+        <img class="profile-pic" src="img/new_profile.jpg" alt="Photo of Zeyu Chen" />
+        <p class="greeting">
+          <span class="👋">👋</span>
+          I'm <b>Zeyu Chen</b>, a software engineer at the University of Waterloo
+          <span class="hidden-👋">👋</span>
+        </p>
+        <div class="intro">
+          I like to tackle interesting problems.
+          <br /><br />
+          Recently, I...
+          <ul>
+            <li>interned with the data streaming team at Databricks to improve observability, performance, and stability</li>
+            <li>learned Rust to write safe and performant code</li>
+            <li>took up on CUDA to write my own speedy raytracer</li>
+          </ul>
+          <!--
+            Some bonus things:
+              - practicing Taekwon-do as a 3rd Dan Black Belt
+              - playing rhythm games
+              - running D&D campaigns with friends
+          -->
+          I also previously interned at...
+          <ul>
+            <li>Snowflake (Metadata team)</li>
+            <li>Akuna Capital (Infrastructure team)</li>
+            <li>Coinbase (Security team)</li>
+          </ul>
+          Prior to these, I've authored a bunch of problems for competitive programming platforms like DM::OJ.
+          <br /><br />
+          I was invited to the Canadian Computing Olympiad back in 2021 and received a silver medal.
+        </div>
+        <div class="contact">
+          <a href="https://linkedin.com/in/zeyuchen-dev" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/zecookiez" target="_blank" aria-label="Github">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:hello@zeyuchen.com" target="_blank" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </header>
+    </div>
+
+    <section id="project-section">
+      <div class="projects">
+        <h1 style="letter-spacing: 7px"><b>PROJECTS</b></h1>
+
+        <div class="project">
+          <img loading="lazy" src="img/3dchess.PNG" alt="3D Chess Screenshot" />
+          <div class="project-text">
+            <div class="project-header">
+              <div class="project-title">3D Chess</div>
+              <div class="tech-labels">
+                <span>C++</span>
+                <span>JavaScript</span>
+                <span>WebAssembly</span>
+                <span>HTML</span>
+                <span>CSS</span>
+              </div>
+            </div>
+            <div class="project-description">The Raumschach variant of 3D Chess, with varying computer difficulties executed with minimax and alpha-beta pruning.</div>
+            <a class="project-link" href="https://zeyuchen.com/chess" target="_blank"> View Project </a>
+          </div>
+        </div>
+
+        <div class="project">
+          <img loading="lazy" src="img/cboj.png" alt="CBOJ Screenshot" />
+          <div class="project-text">
+            <div class="project-header">
+              <div class="project-title">Colonel By Online Judge</div>
+              <div class="tech-labels">
+                <span>GCP</span>
+                <span>Python</span>
+                <span>Django</span>
+                <span>MySQL</span>
+              </div>
+            </div>
+            <div class="project-description">
+              An online platform for executing and assessing student code, this modified fork of DMOJ is used by 500+ students at Colonel By over the past 5 years to support classroom learning.
+            </div>
+            <a class="project-link" href="https://cboj.ca" target="_blank"> View Project </a>
+          </div>
+        </div>
+
+        <div class="project">
+          <img loading="lazy" src="img/bias_analysis.png" alt="Bias Analysis Screenshot" />
+          <div class="project-text">
+            <div class="project-header">
+              <div class="project-title">Newspaper Bias Analysis</div>
+              <div class="tech-labels">
+                <span>Tensorflow</span>
+                <span>HuggingFace</span>
+                <span>LLM</span>
+                <span>NTLK</span>
+              </div>
+            </div>
+            <div class="project-description">
+              A service for analyzing political bias in news articles using a combination of fine-tuned transformer models, linguistic features, and LLM-based classification, exploring debiasing
+              techniques from recent papers.
+            </div>
+            <a class="project-link" href="https://fun.zeyuchen.com/quote" target="_blank"> View Project </a>
+          </div>
+        </div>
+
+        <div class="project">
+          <img loading="lazy" src="img/molecroscope.jpg" alt="Molecroscope Screenshot" />
+          <div class="project-text">
+            <div class="project-header">
+              <div class="project-title">Molecroscope</div>
+              <div class="tech-labels">
+                <span>Python</span>
+                <span>OpenCV</span>
+                <span>Keras</span>
+              </div>
+            </div>
+            <div class="project-description">A tool that identifies dangerous skin moles using convolutional neural networks, tracking growth through translation invariance with OpenCV.</div>
+            <a class="project-link" href="https://devpost.com/software/molecroscope" target="_blank"> View Project </a>
+          </div>
+        </div>
+
+        <div class="project">
+          <img loading="lazy" src="img/glow.png" alt="Glow Game Screenshot" />
+          <div class="project-text">
+            <div class="project-header">
+              <div class="project-title">Glow</div>
+              <div class="tech-labels">
+                <span>JavaScript</span>
+                <span>Pixi.js</span>
+              </div>
+            </div>
+            <div class="project-description">A 2D shape-shooting game with enemies, powerups, bosses, and obstacles — the game is synced to the music using real-time analysis!</div>
+            <a class="project-link" href="https://github.com/cycnus-studio/cycnus-studio.github.io" target="_blank"> View Project </a>
+          </div>
+        </div>
+
+        <div class="project">
+          <img loading="lazy" src="img/raytracer.png" alt="Raytracer Screenshot" />
+          <div class="project-text">
+            <div class="project-header">
+              <div class="project-title">3D Raytracer</div>
+              <div class="tech-labels">
+                <span>CUDA</span>
+                <span>C++</span>
+                <span>Python</span>
+              </div>
+            </div>
+            <div class="project-description">A CUDA-accelerated raytracer for generating 3D art with realistic lighting and material effects, optimized with bounding volume hierarchies.</div>
+          </div>
+        </div>
+
+        <div class="project">
+          <img loading="lazy" src="img/inspirational_quote_cropped.jpg" alt="Inspirational Quote Screenshot" />
+          <div class="project-text">
+            <div class="project-header">
+              <div class="project-title">"Inspirational" Quote Generator</div>
+              <div class="tech-labels">
+                <span>LLM</span>
+                <span>FastAPI</span>
+                <span>Python</span>
+              </div>
+            </div>
+            <div class="project-description">A web app that creates questionable inspirational quotes by combining LLM-generated quotes with visuals using Python Imaging Library.</div>
+            <a class="project-link" href="https://fun.zeyuchen.com/quote" target="_blank"> View Project </a>
+          </div>
+        </div>
+
+        <div class="project">
+          <img loading="lazy" src="img/scrabble.png" alt="Scrabble Screenshot" />
+          <div class="project-text">
+            <div class="project-header">
+              <div class="project-title">Scrabble</div>
+              <div class="tech-labels">
+                <span>JavaScript</span>
+                <span>HTML</span>
+                <span>CSS</span>
+              </div>
+            </div>
+            <div class="project-description">A classic Scrabble game with a built-in opponent playing in varying difficulties.</div>
+            <a class="project-link" href="https://github.com/zecookiez/scrabble" target="_blank"> View Project </a>
+          </div>
+        </div>
+
+        <!--
+      <div class="project">
+        <img src="img/sunspotbot.jpg" alt="Sunspot Bot Screenshot">
+        <div class="project-text">
+          <div class="project-header">
+            <div class="project-title">Sunspot Bot</div>
+            <div class="tech-labels">
+              <span>Python</span>
+              <span>Leapmotion</span>
+            </div>
+          </div>
+          <div class="project-description">
+            A robot that listens to user gestures through Leapmotion to make your plant mobile and well-nourished.
+          </div>
+          <a class="project-link" href="https://devpost.com/software/sunspot-bot" target="_blank">
+            View Project
+          </a>
+        </div>
+      </div>
+      --></div>
+    </section>
+    <script src="js/background.js"></script>
+  </body>
 </html>
